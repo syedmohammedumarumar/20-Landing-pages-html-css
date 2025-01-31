@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #1e2227;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1e2227;
+    z-index: 1;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+.nav-icons img{
+    width: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.row{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* background-color: cadetblue; */
+}
+.col-1 ,.col-2{
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.col-2{
+    background-color: red;
+    padding-top: 8%;
+    position: relative;
+}
+.col-1{
+    padding-left: 8%;
+   
+}
+.col-1 h1{
+    font-size: 70px;
+    line-height: 100px;
+    margin-bottom: 2px;
+}
+.col-1 h2{
+    font-size: 35px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+button{
+    display: inline-block;
+    width: fit-content;
+    padding: 15px 40px;
+    border-radius: 20px;
+    background: red;
+    border: none;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.feature-img{
+    width: 100%;
+    text-align: center;
+}
+.feature-img img{
+    margin-top: 16px;
+    width: 60%;
+    transform: rotate(-20deg);
+}
+.small-img-row{
+    display: flex;
+    width: 80%;
+    margin: 70px auto 0;
+    align-items: center;
+    justify-content: space-around;
+}
+.small-img{
+    width: 80px;
+    height: 80px;
+    background: #ccc;
+}
+.small-img img{
+    margin-top: 4px;
+    width: 120px;
+    transform: translate(-50px 20px) rotate(-20deg);
+}
+.small-img:nth-child(1){
+    background: #b9c8ff;
+}
+
+.small-img:nth-child(2){
+    background: #91ffdd;
+}
+
+.small-img:nth-child(2){
+    background: #ff6767;
+}
+
+.small-img:nth-child(4){
+    background: #9dff90;
+}
+.col-2 h2{
+    position: absolute;
+    top: 22%;
+    left: 10%;
+    font-size: 100px;
+    opacity: 0.3;
+}
+button:hover{
+    background: #aa0505;
+    transform: translateY(-5PX);
+}

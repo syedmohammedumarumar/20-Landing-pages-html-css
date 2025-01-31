@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background: #000;
+  background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  color: white;
+  padding: 0 8%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.logo {
+  width: 160px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 10px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.hero h1 {
+  font-size: 70px;
+  margin-top: 11%;
+}
+.hero button {
+  background: #393939;
+  border: 0;
+  outline: none;
+  padding: 15px 30px;
+  color: white;
+  margin-top: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.indicator span {
+  display: inline-block;
+  background: #3a3a3a;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.indicator {
+  margin-top: 140px;
+}
+.indicator span.active {
+  background-color: #bfbfbf;
+  /* color: #bfbfbf; */
+}
+.cta {
+  position: absolute;
+  width: 25%;
+  min-width: 25px;
+  right: 8%;
+  bottom: 100px;
+}
