@@ -1,0 +1,121 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Viga&display=swap');
+
+
+*{
+Padding:0;
+Margin:0;
+Box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: url(imgs/img-1.png);
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.5s ease-in-out;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgs{
+    margin: 10px 4%;
+    margin-top: 10px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    list-style: none;
+    margin-right: 90px;
+    transition: .5s;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.icons{
+    margin: 10px 4%;
+}
+.icons i{
+    margin-right: 20px;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(14, 146, 245);
+}
+.icons i:hover{
+    color: rgb(14, 146, 245);
+}
+.content{
+    margin: 10px 4%;
+    margin-top: 80px;
+}
+.content h3{
+    color: white;
+    font-size: 20px;
+    font-style: bold;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+.content h1{
+    font-size: 150px;
+    color: white;
+    font-family: 'Viga', sans-serif;
+}
+.content p{
+    max-width: 550px;
+    color: #d8cece;
+    line-height: 25px;
+}
+.container a{
+    color: white;
+    margin-top: 20px;
+    margin: 10px 4%;
+}
+.container a:hover{
+    color: rgb(14, 146, 245);
+}
+#menu{
+    display: none;
+}
+
+
+@media only screen and (max-width:700px) {
+
+    nav ul{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+        overflow: hidden;
+        background: #000;
+        background:rgb(14, 146, 245);
+        width: 100%;
+    }
+   
+    .icons{
+        display: flex;
+    }
+   #menu{
+    display: block;
+   }
+   .content {
+    margin-top: 120px; /* Adjust margin for smaller screens */
+  }
+
+  .content h1 {
+    font-size: 80px; /* Adjust font size for smaller screens */
+  }
+
+  .content p {
+    max-width: 100%; /* Allow text to take full width on smaller screens */
+  }
+}
